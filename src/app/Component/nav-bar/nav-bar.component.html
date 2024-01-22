@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary navBarBoxShadow">
+<nav class="navbar navbar-expand-lg navBarCustomClass" >
   <div class="container-fluid">
     <!-- -------- Brand Name ----------- -->
-    <a class="navbar-brand" href="#"><i class="fa-brands fa-angular"></i> AngularKart</a>
+    <a class="navbar-brand" href="#"><i class="fa-brands fa-angular"></i> {{navBarBrandName}}</a>
     <!-- Toggler button for small screen -->
     <button
       class="navbar-toggler"
@@ -14,6 +14,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- Toggler Content -->
     <div class="collapse" id="navbarSupportedContent" data-bs-theme="dark">
         <div class="bg-dark p-4">
           <h5 class="text-body-emphasis h4">Collapsed content</h5>

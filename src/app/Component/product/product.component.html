@@ -1,0 +1,29 @@
+<div class="card mx-auto mt-3 pt-3" style="width: 98%">
+  <div class="row row-cols-1 row-cols-md-3" style="width: 95%">
+    <div class="col mb-4 ms-2" style="width: 15rem" *ngFor="let item of items">
+      <div class="card h-100" style="text-align: center">
+        <img
+          [src]="item.itemImg"
+          class="card-img-top image-responsive mx-auto p-1"
+          style="max-width: 10rem; max-height: 15rem"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="lead">{{ item.itemName }}</p>
+          <p class="card-text">
+            <span class="bg-primary-subtle p-1">
+              {{ item.rating }} <i class="fa-regular fa-star"></i>
+            </span>
+          </p>
+          <p>
+            ₹{{ item.actualPrice }}
+            <span class="text-decoration-line-through text-secondary">
+              ₹{{ item.discountPrice }}
+            </span>
+            <span class="text-info">{{ item.discountPercentage }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
